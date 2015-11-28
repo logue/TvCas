@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Multi2Decoder", "Multi2Decoder\Multi2Decoder.vcxproj", "{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TvCas", "TVCAS_25\TVCAS_B25.vcxproj", "{A3869304-1481-431E-B7C6-C4ED342106EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		DebugSPHD|x64 = DebugSPHD|x64
+		DebugSPHD|x86 = DebugSPHD|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		ReleaseSPHD|x64 = ReleaseSPHD|x64
+		ReleaseSPHD|x86 = ReleaseSPHD|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.Debug|x64.ActiveCfg = Debug|x64
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.Debug|x64.Build.0 = Debug|x64
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.Debug|x86.ActiveCfg = Debug|Win32
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.Debug|x86.Build.0 = Debug|Win32
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.DebugSPHD|x64.ActiveCfg = DebugSPHD|x64
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.DebugSPHD|x64.Build.0 = DebugSPHD|x64
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.DebugSPHD|x86.ActiveCfg = DebugSPHD|Win32
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.DebugSPHD|x86.Build.0 = DebugSPHD|Win32
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.Release|x64.ActiveCfg = Release|x64
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.Release|x64.Build.0 = Release|x64
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.Release|x86.ActiveCfg = Release|Win32
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.Release|x86.Build.0 = Release|Win32
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.ReleaseSPHD|x64.ActiveCfg = Release|x64
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.ReleaseSPHD|x64.Build.0 = Release|x64
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.ReleaseSPHD|x86.ActiveCfg = Release|Win32
+		{F92B34A6-7FA5-4497-96B1-0BC32E3080C0}.ReleaseSPHD|x86.Build.0 = Release|Win32
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.Debug|x64.ActiveCfg = Debug|x64
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.Debug|x64.Build.0 = Debug|x64
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.Debug|x86.ActiveCfg = Debug|Win32
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.Debug|x86.Build.0 = Debug|Win32
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.DebugSPHD|x64.ActiveCfg = DebugSPHD|x64
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.DebugSPHD|x64.Build.0 = DebugSPHD|x64
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.DebugSPHD|x86.ActiveCfg = DebugSPHD|Win32
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.DebugSPHD|x86.Build.0 = DebugSPHD|Win32
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.Release|x64.ActiveCfg = Release|x64
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.Release|x64.Build.0 = Release|x64
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.Release|x86.ActiveCfg = Release|Win32
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.Release|x86.Build.0 = Release|Win32
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.ReleaseSPHD|x64.ActiveCfg = ReleaseSPHD|x64
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.ReleaseSPHD|x64.Build.0 = ReleaseSPHD|x64
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.ReleaseSPHD|x86.ActiveCfg = ReleaseSPHD|Win32
+		{A3869304-1481-431E-B7C6-C4ED342106EB}.ReleaseSPHD|x86.Build.0 = ReleaseSPHD|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

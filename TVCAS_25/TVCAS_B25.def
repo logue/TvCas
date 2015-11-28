@@ -1,0 +1,3 @@
+EXPORTS
+	TVCAS_GetModuleInfo
+	TVCAS_CreateInstance

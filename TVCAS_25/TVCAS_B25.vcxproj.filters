@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BonBaseClass.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="CardReader.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="CasCard.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaData.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaDecoder.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Multi2Decoder.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="TsDescrambler.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="TsDescriptor.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="TsPacketParser.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="TsStream.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="TsTable.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="TsUtilClass.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="TVCAS_B25.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="TsEncode.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdUtil.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BonBaseClass.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="CardReader.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="CasCard.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaData.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaDecoder.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Multi2Decoder.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="TsDescrambler.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="TsDescriptor.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="TsPacketParser.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="TsStream.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="TsTable.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="TsUtilClass.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="TVCAS.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdUtil.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="TsEncode.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="TVCAS_B25.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TVCAS_B25.rc">
+      <Filter>Resource files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
