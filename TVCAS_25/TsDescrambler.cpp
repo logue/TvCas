@@ -20,6 +20,10 @@ static char THIS_FILE[]=__FILE__;
 // EMM処理を行う期間
 #define EMM_PROCESS_TIME	(7 * 24)
 
+#if EMMLOG
+#include <fstream>
+#define LOGNAME		"Emmlog.txt"
+#endif
 
 // ECM処理内部クラス
 class CEcmProcessor
@@ -28,6 +32,9 @@ class CEcmProcessor
 {
 public:
 	CEcmProcessor(CTsDescrambler *pDescrambler);
+#if EMMLOG
+	virtual ~CEmmProcessor(){ emmlog << "// Log close()" << std::endl; emmlog.close(); }
+#endif
 	const bool DescramblePacket(CTsPacket *pTsPacket);
 	const bool SetScrambleKey(CCasCard *pCasCard, const BYTE *pEcmData, DWORD EcmSize);
 
@@ -81,6 +88,9 @@ private:
 	const bool OnTableUpdate(const CPsiSection *pCurSection) override;
 
 	CTsDescrambler *m_pDescrambler;
+#if EMMLOG
+	std::ofstream emmlog;
+#endif
 };
 
 // ESスクランブル解除内部クラス
@@ -1390,6 +1400,30 @@ const bool CEmmProcessor::OnTableUpdate(const CPsiSection *pCurSection)
 		if (EmmSize < 17 || EmmSize > MAX_EMM_DATA_SIZE || DataSize < Pos + EmmSize)
 			break;
 
+#if EMMLOG
+		{
+			int n = 0;
+			char buf[1024];
+			for (int i = 0; i < EmmSize; i++)
+			{
+				BYTE b = pHexData[Pos + i];
+
+				if ((b >> 4) < 10)
+					buf[n++] = '0' + (b >> 4);
+				else
+					buf[n++] = 'a' + (b >> 4) - 10;
+
+				if ((b & 0x0f) < 10)
+					buf[n++] = '0' + (b & 0x0f);
+				else
+					buf[n++] = 'a' + (b & 0x0f) - 10;
+
+				buf[n++] = ' ';
+			}
+			buf[n-1] = 0;
+			emmlog << buf << std::endl;
+		}
+#endif
 		if (::memcmp(pCardID, &pHexData[Pos], 6) == 0) {
 			SYSTEMTIME st;
 			const CTotTable *pTotTable = dynamic_cast<const CTotTable*>(m_pDescrambler->m_PidMapManager.GetMapTarget(PID_TOT));
@@ -1443,6 +1477,10 @@ CTsDescrambler::CEsProcessor::CEsProcessor(CEcmProcessor *pEcmProcessor)
 	: CTsPidMapTarget()
 	, m_pEcmProcessor(pEcmProcessor)
 {
+#if EMMLOG
+	emmlog.open(LOGNAME, std::ios::app);
+	emmlog << "// Log open()" << std::endl;
+#endif
 }
 
 CTsDescrambler::CEsProcessor::~CEsProcessor()
