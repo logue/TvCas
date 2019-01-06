@@ -296,7 +296,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ProgramDatabaseFile>$(TargetDir)\$(TargetName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>$(SolutionDir)$(Platform)\$(Configuration)\Multi2Decoder.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)$(Platform)\Release\Multi2Decoder.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>TVCAS_B25.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
@@ -346,7 +346,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ProgramDatabaseFile>$(TargetDir)\$(TargetName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>$(SolutionDir)$(Platform)\$(Configuration)\Multi2Decoder.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)$(Platform)\Release\Multi2Decoder.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>TVCAS_B25.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
