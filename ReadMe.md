@@ -1,4 +1,5 @@
-#CAS処理用tvcasプラグイン
+# CAS処理用tvcasプラグイン
+
 by Logue
 
 CasReaderプラグインでCAS処理を呼び出すためのライブラリ。再配布規定に基づき、オリジナルと出力ファイル名その他が異なります。
@@ -7,31 +8,37 @@ TVTest 0.9.0未満では動作確認していません。
 
 言うまでもありませんが、スクランブル解除などといった機能はありません。
 
-##ビルドオプションについて
+## ビルドオプションについて
+
 コマンド|説明|出力ファイル
 -------|-------|-------:
 Release / Debug|地上波用のtvcasファイルを生成します。|B25.tvcas
 ReleaseSPHD / DebugSPHD|スカパー向けのtvcasファイルを生成します。|SPHD.tvcas
 
-##使用方法
+## 使用方法
+
 * ビルドしたファイルはTvTestディレクトリ内に入れて、Pluginsディレクトリ内に[CasProcessor.tvtp](https://github.com/logue/CasProcessor) を設置します。
 * TVTestを起動してCasProcessor.tvtpが起動していることを確認したら設定画面を開き、TSプロセッサーに移動します。
 * TSプロセッサーの値をCasProcessorを選択し、デフォルトモジュールから地デジの場合、B25.tvcas、スカイパーフェクTVの場合はSPHD.tvcasを読み込むようにします。
 * デフォルトデバイスでCAS処理を行いたいデバイスを選びます
 * デフォルトフィルターで使用しようとしているB-CASカードを選択します。
 
-##TODO
+## TODO
+
 スカパーが映る環境でないのでチェックはしてありません。
 
-##リンク
+## リンク
+
 * [TVTest](https://github.com/DBCTRADO/TVTest)
 * [CasProcessor](https://github.com/logue/CasProcessor)
 
-##謝辞
+## 謝辞
+
 * [追加ファイル置き場](http://www2.wazoku.net/2sen/dtvvup/)
 * [TVTest0.9.0(2014/12/1以降)のビルド方法](http://dtv.air-nifty.com/sphd/2015/03/tvtest-09020141.html)
 
-#以下オリジナル
+## 以下オリジナル
+
 >本プログラムは、デジタル放送における CAS 処理の試験又は研究のために公開されています。
 >
 >以下の条項に同意する場合にのみ利用することができます。
